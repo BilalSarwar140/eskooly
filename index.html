@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Poppins:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+
+    <title>eSkolly</title>
+     <!-- <link rel="stylesheet" href="github/aos.css" /> -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        * {
+            margin: 0px;
+            /* padding: px; */
+            scroll-behavior: smooth;
+            /* flex-wrap: wrap; */
+            /* scroll-margin: center; */
+        }
+        /* .nav{ */
+            /* width: 20%; */
+        /* } */
+
+        .nave::before {
+            background: url('https://www.eskooly.com/img/slider/image2.png') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            /* opacity: 0.5; */
+            /* max-width: 100%;  */
+            /* background-attachment: fixed; */
+            /* display: block;
+            position: relative; */
+        }
+
+        .ul1 {
+            height: 80px;
+            background-color: rgb(24, 199, 252);
+            display: flex;
+            list-style: none;
+            align-items: center;
+            /* justify-items: center; */
+            flex-wrap: wrap;
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+            width: 95.7vw;
+            /* display: block; */
+            /* display: inline; */
+            /* display: block; */
+        }
+
+        li {
+            color: white;
+            text-decoration: none;
+            justify-items: center;
+            margin-left: 20px;
+            align-items: center;
+            /* padding-bottom: 50px; */
+            /* display: inline; */
+            /* padding-top: 20px; */
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        li img {
+            padding-right: 5px;
+            /* margin-top: 5px; */
+            /* padding-top: 10px; */
+
+        }
+
+        li>a:hover {
+            border-bottom: 1px double white;
+            /* background-color: violet; */
+        }
+
+        .img1 {
+            margin-right: 8rem;
+        }
+
+        .div1 {
+            display: flex;
+            color: white;
+            margin-top: 10%;
+            /* justify-items: center; */
+            justify-content: center;
+            /* align-items: center; */
+            width: 99%;
+        }
+
+        .div1_1 {
+            margin-left: 18%;
+        }
+
+        .div1_2 {
+            /* width: 30%; */
+            font-size: 20px;
+        }
+
+        .div1_2 h1 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            /* width: 100%; */
+            padding-bottom: 20px;
+        }
+
+        .div1_2 p {
+            width: 49.5%;
+            padding-bottom: 40px;
+            /* text-align: center; */
+        }
+
+        .button1 {
+            height: 40px;
+            width: 30%;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .maindiv1 {
+            margin-top: 12%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .maindiv1 h1 {
+            font-weight: normal;
+        }
+
+        .maindiv1_1 {
+            margin-bottom: 40px;
+        }
+
+        hr.hr1 {
+            width: 50px;
+            margin-left: 49%;
+            border-top: 2px solid rgb(155, 149, 149);
+        }
+
+        .maindiv1_2 {
+            margin-top: 10px;
+            padding-left: 12%;
+            padding-right: 12%;
+            font-size: 16px;
+            color: rgb(85, 81, 81);
+            margin-bottom: 40px;
+        }
+
+        .maindiv1_3 {
+            /* margin-left: 10%; */
+            display: flex;
+            /* margin-right: 10%; */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* .flexdiv{
+            width: 800px;
+            flex-wrap: wrap;
+            width: 30%;
+            display: flex;
+            height: 100px;
+        }*/
+        .emoji {
+
+            border: 2px solid #25CBF5;
+            border-radius: 0 100px 100px;
+            width: 65px;
+            height: 45px;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            justify-content: center;
+            margin-right: 20px;
+        }
+
+        .flexdiv1 h2 {
+            font-size: 20px;
+        }
+
+        .flexdiv2 h2 {
+            font-size: 18px;
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        /* .flexdiv1{
+            display: block;
+            width: 33.333333333%;
+            display: flex;
+            position: relative;
+            z-index: 2;
+            box-sizing: border-box;
+            float: left;
+            /* flex-direction: row; */
+        /* }  */
+        /* .flexdiv1{
+            width: 25%;
+        } */
+        /* .flexdiv2{
+            display: flex;
+        } */
+        /* .flexdiv2{
+            display: block;
+            width: 33.333333333%;
+            display: flex;
+            position: relative;
+            z-index: 2; */
+
+        /* } */
+        .flexdiv1 {
+            /* width: 20%; */
+            display: flex;
+        }
+
+        .div2 {
+            display: block;
+            box-sizing: border-box;
+            float: right;
+            width: 33.33333%;
+            margin-left: 30px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .div3 {
+            display: block;
+            box-sizing: border-box;
+            float: left;
+            width: 33.33333%;
+            text-align: left;
+            margin-left: 10%;
+            font-size: 13px;
+        }
+
+        .img21 {
+            display: block;
+            margin-left: -120px;
+
+        }
+
+        .flexdiv1 {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .flexdiv2 {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .maindiv3 {
+            background-color: rgb(250, 250, 250);
+            border: 1px solid lightgray;
+            margin-top: 40px;
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 80px;
+        }
+
+        .text2 {
+            width: 40%;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .img2 {
+            margin-left: 200px;
+        }
+
+        hr.hr2 {
+            margin-top: 20px;
+            width: 40px;
+            border: 1px solid lightgray;
+            margin-bottom: 20px;
+        }
+
+        .text2 p {
+            margin-bottom: 20px;
+        }
+
+        .text2 h1 {
+            font-size: 2rem;
+        }
+
+        .text3 p {
+            margin-bottom: 20px;
+        }
+
+        .text3 h1 {
+            font-size: 2rem;
+        }
+
+        .button3 {
+            margin-left: 32%;
+            background-color: #25CBF5;
+            border: 1px solid #25CBF5;
+            color: white;
+            height: 40px;
+            width: 250px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 19px;
+            /* padding-bottom: 15px; */
+            /* padding-top: 0px; */
+
+        }
+
+        .button3:hover {
+            background-color: #255cf5;
+            border: 1px solid #255cf5;
+        }
+
+        .button3 i {
+            margin-right: 10px;
+
+        }
+
+        .maindiv4 {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+        }
+
+        .text3 {
+            width: 33%;
+            text-align: left;
+            font-size: 13px;
+            margin-right: 40px;
+        }
+
+        /* .maindiv3 img{
+            margin-top: 20px;
+        } */
+        .button4 {
+            margin-left: 42%;
+            background-color: #25CBF5;
+            border: 1px solid #25CBF5;
+            color: white;
+            height: 40px;
+            width: 250px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 19px;
+            /* padding-bottom: 15px; */
+            /* padding-top: 0px; */
+
+        }
+
+        .image1 {
+            margin-top: 30px;
+        }
+
+        .maindiv5 {
+            margin-top: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 10%;
+            /* padding-right: 50%; */
+            /* background-image: url('https://www.eskooly.com/img/base/video-overlay-1.png'); */
+            background-repeat: no-repeat;
+            size: cover;
+            background-color: #065569;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            background-attachment: fixed;
+            border: 1px solid black;
+        }
+
+        .boxes {
+            margin-top: 100px;
+            /* padding-top: 40px; */
+            background-color: white;
+            width: 25%;
+            /* padding-top: -90px; */
+            /* padding-left: 20px; */
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            display: block;
+            /* display: flex; */
+            margin-right: 5%;
+        }
+
+        .logo {
+            padding-top: 10px;
+            background-color: #25CBF5;
+            /* display: block; */
+            position: relative;
+            border: 1px solid #25CBF5;
+            padding: 15px;
+            left: 38%;
+            width: 40px;
+            border-radius: 0px 100px 100px;
+            /* top: 20px; */
+            top: -40px;
+        }
+
+        .text4 {
+            padding: 20px;
+            padding-top: 0px;
+            position: relative;
+            top: -20px;
+            padding-bottom: 0px;
+        }
+
+        .text4 input {
+            margin: 15px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            border-bottom: 0.3px dotted #25CBF5;
+        }
+
+        .text4 input:hover {
+            color: #25CBF5;
+            border-bottom: 0.3px dotted #25CBF5;
+        }
+
+        .text4 h2 {
+            font-size: 16px;
+        }
+
+        .text4 p {
+            font-size: 12px;
+        }
+
+        .maindiv6 {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 8%;
+            margin-right: 8%;
+            font-size: 28px;
+            margin-bottom: 80px;
+        }
+
+        .maindiv6 hr {
+            border-top: 1px solid gray;
+            width: 80%;
+            text-align: center;
+            margin: 0px auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .maindiv6 h3 {
+            font-size: 18px;
+        }
+
+        .maindiv7 {
+            padding-top: 8%;
+            background-color: rgb(241, 241, 241);
+            border: 1px solid lightgray;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 8%;
+        }
+
+        .screen {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .maindiv7 hr {
+            border-top: 1px solid gray;
+            width: 20%;
+            text-align: center;
+            margin: 0px auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .maindiv7 p {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 60px;
+            
+
+        }
+
+        .maindiv7 img {
+            border: 1px solid grey;
+            cursor: pointer;
+        }
+
+        .maindiv8 {
+            padding-top: 80px;
+            background: linear-gradient(90deg, rgba(46, 170, 201, 0.5), #28209c), url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')no-repeat center center/cover;
+            background-attachment: fixed;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 80px;
+            margin-bottom: 100px;
+        }
+
+        .flex3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .box1 {
+            border-radius: 5px;
+            color: black;
+            padding-top: 30px;
+            margin-top: 50px;
+            width: 15%;
+            background-color: #fff;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+        }
+
+        .maindiv8 h1 {
+            color: white;
+            /* text-align: left;
+            padding-left: 5%; */
+        }
+
+        .box1 h1 {
+            color: black;
+            font-size: 24px;
+        }
+
+        .box1 p {
+            font-size: 14px;
+            /* padding-left: ; */
+        }
+
+        .box1 button {
+            /* color: #25CBF5; */
+            background-color: transparent;
+            border: none;
+            border-bottom: 0.5px dotted #25CBF5;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .box1 button:hover {
+            color: #25CBF5;
+        }
+
+        .box1 button img {
+            margin-right: 5px;
+        }
+
+        .subscribe {
+            /* display: flex; */
+            justify-content: center;
+        }
+
+        .text01 {
+            margin-top: 30px;
+            height: 40px;
+            width: 77%;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px 0px 0px 5px;
+            padding-left: 25px;
+        }
+
+        .button01 {
+            height: 42px;
+            margin-left: -5px;
+            border-radius: 0px 5px 5px 0px;
+            width: 12%;
+            /* border: none; */
+            background-color: #25CBF5;
+            border: 1px solid #25CBF5;
+            color: white;
+            cursor: pointer;
+        }
+
+        .maindiv9 {
+            margin-top: 15%;
+            margin-bottom: 100px;
+            margin-right: 14%;
+            text-align: left;
+        }
+
+        .maindiv9>h1,
+        .maindiv9>h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+
+        .maindiv9 h2 {
+            font-weight: 400;
+            color: gray;
+        }
+
+        .seclast {
+            text-align: left;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mail {
+            height: 25px;
+            width: 150%;
+            border: 1px solid rgb(194, 190, 190);
+        }
+
+        .maindiv9 hr {
+            text-align: center;
+            margin: 0px auto;
+            margin-bottom: 50px;
+            width: 15%;
+            /* text-align: left; */
+            /* margin-top: ; */
+        }
+
+        .comment {
+            margin-top: 30px;
+            text-align: left;
+            margin-left: 14%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .text02 {
+            width: 80%;
+            height: 150px;
+            border: 1px solid rgb(194, 190, 190);
+            text-align: left;
+        }
+
+        .button002 {
+            height: 40px;
+            width: 14%;
+            color: white;
+            background-color: #25CBF5;
+            border: 1px solid #25CBF5;
+            cursor: pointer;
+            margin-left: 14%;
+            /* text-align: left; */
+        }
+
+        .button002:hover {
+            background-color: #255cf5;
+            border: 1px solid #255cf5;
+        }
+
+        .button4:hover {
+            background-color: #255cf5;
+            border: 1px solid #255cf5;
+        }
+
+        .google {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .imageslast {
+            margin-left: 50px;
+            cursor: pointer;
+            padding: 20px;
+            /* height: 20px;
+            width: 20px; */
+        }
+
+        .imageslast:hover {
+            border: 1px solid black;
+            border-radius: 50%;
+
+        }
+
+        .maindiv10 {
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding-left: 12%;
+            padding-top: 50px;
+            /* margin-bottom: 100px; */
+            padding-bottom: 50px;
+            color: #999;
+        }
+
+        .lastsec {
+            display: flex;
+        }
+
+        .div10_1 {
+            width: 33%;
+            /* text-align: center; */
+            margin-right: 200px;
+
+        }
+
+        .div10_1>img {
+            margin-bottom: 20px;
+        }
+
+        .div10_1 p {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .div10_1 input {
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid #999;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .h201 {
+            margin-bottom: 20px;
+        }
+
+        .div01 {
+            display: flex;
+        }
+
+        .div10_1 input:hover {
+            color: #255cf5;
+            border-bottom: 1px solid #255cf5;
+        }
+
+        .maindiv11 {
+            background-color: rgb(51, 50, 50);
+            color: #999;
+            display: flex;
+            padding-left: 12%;
+            padding-right: 12%;
+            justify-content: space-between;
+            justify-items: center;
+            /* height: 60px; */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            /* margin-right: 20px; */
+            justify-content: space-between;
+            width: 400px;
+        }
+
+        .style {
+            border-bottom: 1px solid #999;
+            cursor: pointer;
+        }
+
+        .style:hover {
+            color: #255cf5;
+            border-bottom: 1px solid #255cf5;
+        }
+
+        li>a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nave">
+        <ul class="ul1" data-aos="flip-right">
+            <li><img class="img1" src="eskooly img/eskooly-big-white.png" height="50px" width="100px"></li>
+            <li><a href="#Home"><img class="imga" src="eskooly img/home.svg" height="16px" width="16px"
+                        style="padding-bottom: -10px;">Home</a></li>
+            <li><a href="#Features"><img class="imga" src="eskooly img/team-work.svg" height="16px"
+                        width="16px">Features</a></li>
+            <li><a href="#Why"><img class="imga" src="eskooly img/directional-compass-.svg" height="16px"
+                        width="16px">Why Us</a></li>
+            <li><a href="#Describe"><img class="imga" src="eskooly img/flash.svg" height="16px"
+                        width="16px">Describe</a></li>
+            <li><a href="#Services"><img class="imga" src="eskooly img/umbrella.svg" height="16px"
+                        width="16px">Services</a></li>
+            <li><a href="#Screenshots"><img class="imga" src="eskooly img/open-laptop-computer.svg" height="16px"
+                        width="16px">Screenshots</a></li>
+            <li><a href="#More"><img class="imga" src="eskooly img/menu-button-of-three-horizontal-lines.svg"
+                        height="16px" width="16px">More</a></li>
+            <li><a href="eskoolysignin.html"><img class="imga" src="eskooly img/logout.svg" height="16px" width="16px">Sign Up</a></li>
+            <li><a href="eskoolylogin.html"><img class="imga" src="eskooly img/locked-padlock.svg" height="16px" width="16px">Log In</a></li>
+            <li><a href=""><img class="imga" src="eskooly img/search-interface-symbol.svg" height="16px" width="16px"></a></li>
+
+        </ul>
+
+    </div>
+    <div class="div1" id="Home">
+        <div class="div1_1" data-aos="fade-right"><img src="https://www.eskooly.com/img/baner3.png" width="500px" height="350px"></div>
+        <div class="div1_2" data-aos="fade-left">
+            <h1 class="fih1">FREE ONLINE SCHOOL MANAGMENT SOFTWARE</h1>
+            <p>Now you can manage your school, college or any educational center with eSkooly. It's 100% free for
+                life time no limitations.</p>
+            <input class="button1" type="button" value="SIGN UP NOW, IT'S FREE">
+        </div>
+    </div>
+    <div class="maindiv1" id="Features">
+        <div class="maindiv1_1">
+            <h1 data-aos="fade-up">Features Of School Managment Software</h1>
+        </div>
+        <hr class="hr1">
+        <div class="maindiv1_2" data-aos="zoom-in">
+            <p>eSkooly is a complete and feature rich school management software for all educational institutes. This
+                school management software is for learning, administration and management activities in schools,
+                colleges, universities, tuition centers or training centers. Our free school management system manages
+                everything starting from admission to attendance and exams to result cards.</p>
+        </div>
+        <div class="maindiv1_3">
+            <div class="div3" data-aos="fade-right">
+                <div class="flexdiv1">
+                    <div class="emoji"><img src="eskooly img/thumb-up-gross-line-symbol.svg" height="16px" width="16px">
+                    </div>
+                    <div class="text">
+                        <h2>Absolutely Free</h2>
+                        <p>eSkooly is an absolutely 100% free school managemnet software for lifetime with no
+                            limitations. No need to buy anything. Just Sign Up</p>
+                    </div>
+                </div>
+                <div class="flexdiv1">
+                    <div class="emoji"><img src="eskooly img/laptop-computer.svg" height="16px" width="16px"></div>
+                    <div class="text">
+                        <h2>Web Based Application</h2>
+                        <p>eSkooly is free school software which is always online, you can access it from anywhere,
+                            anytime. We will take care of your data and backups.</p>
+                    </div>
+                </div>
+                <div class="flexdiv1">
+                    <div class="emoji"><img src="eskooly img/cloud.svg" height="16px" width="16px"></div>
+                    <div class="text">
+                        <h2>Regular Updates & Support</h2>
+                        <p>We add new and awesome features regularly to make our school administrative software
+                            unmatchable. Free online 24/7 support for users.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img21">
+                    <img src="https://www.eskooly.com/img/landing/eskooly-2.png" alt="" height="520px" width="260px" data-aos="zoom-in">
+                </div>
+            </div>
+            <div class="div2" data-aos="fade-left">
+                <div class="flexdiv2">
+                    <div class="emoji"><img src="eskooly img/computer-tablet.svg" height="16px" width="16px"></div>
+                    <div class="text">
+                        <h2>Responsive Web Design</h2>
+                        <p>You can use our free school management software on any device, like Mobile, Tablet, Laptop or
+                            a desktop due to its responsive design.</p>
+                    </div>
+                </div>
+                <div class="flexdiv2">
+                    <div class="emoji"><img src="eskooly img/pie-chart.svg" height="16px" width="16px"></div>
+                    <div class="text">
+                        <h2>Infographics & Animations</h2>
+                        <p>We use infographics and animations to explain students reports and results. Our free school
+                            software facilitates you with optimized result.</p>
+                    </div>
+                </div>
+                <div class="flexdiv2">
+                    <div class="emoji"><img src="eskooly img/light-bulb-off.svg" height="16px" width="16px"></div>
+                    <div class="text">
+                        <h2>Fast, Secure & Easy</h2>
+                        <p>We use advanced tools and technologies to build up this free school software. It is very
+                            fast,secure,relaible and easy to use and manage.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="maindiv3" id="Why">
+            <div class="img2"  data-aos="flip-right">
+                <img src="https://www.eskooly.com/img/landing/eskooly-5.png" height="250px" width="330px">
+            </div>
+            <div class="text2">
+                <h1 data-aos="fade-left">Why eSkooty is best management software</h1>
+                <hr class="hr2">
+                <p data-aos="fade-up">Besides from, eSkooly is a completely free online school management software it has more school
+                    management features than any other online school management system in the market. It does not ends
+                    here, eSkooly is still enhancing features. You will be automatically updated as new feature will be
+                    a part of our free school management software. Some main school management features are given below.
+                </p>
+                <p data-aos="zoom-in-up"><img src="eskooly img/check.svg" height="13px" width="13px">An admin portal with all controls.</p>
+                <p data-aos="zoom-in-down"><img src="eskooly img/check.svg" height="13px" width="13px">Portals for students/parents, staff and
+                    teachers.</p>
+                <p data-aos="zoom-in-up"><img src="eskooly img/check.svg" height="13px" width="13px">Students and staff complete data record
+                    system.</p>
+                <p data-aos="zoom-in-down"><img src="eskooly img/check.svg" height="13px" width="13px">Classes, Courses and Subjects management.
+                </p>
+                <p data-aos="zoom-in-up"><img src="eskooly img/check.svg" height="13px" width="13px">Online attendance system for students and
+                    staff.</p>
+                <p data-aos="zoom-in-down"><img src="eskooly img/check.svg" height="13px" width="13px">Accounts, fees, salaries, income and
+                    expense management.</p>
+                <p data-aos="zoom-in-up"><img src="eskooly img/check.svg" height="13px" width="13px">Exams, class tests, home work and
+                    assignments management.</p>
+                <button class="button3" data-aos="flip-left"><i class="button2"><img src="eskooly img/logout.svg" height="16px" width="16px"
+                            alt=""></i>Sign Up, Now It's Free</button>
+            </div>
+        </div>
+        <div class="maindiv4" id="Describe">
+            <div class="text3">
+                <h1 data-aos="fade-right">Single Stop Solution For School Management</h1>
+                <hr class="hr2">
+                <p data-aos="zoom-in-right">Managing any educational institute is not a piece of cake. Managing students, staff, timetable,
+                    exams, class test, attendance, fees collection, accounts ect. It does not ends here. Parents are
+                    always worried about their child performance and they need satisfaction. They really care about
+                    their child academic statics. Moreover we have seen schools using huge registers to mark attendance
+                    of their students and staff. And we have also seen that schools manage their admission, exams data,
+                    class tests data ect, manually. We know it takes a lot of time and very difficlt to manage.</p>
+                <p data-aos="zoom-out-left">Well ! it's time to put check on these worries. eSkooly presents you a free online school management
+                    software to make conventional tasks easier. This is one stop solution to manage, track and record
+                    everything within your school or organization. Our free online school management software includes
+                    admin, staff and students panel, exams madule, attendance madule, fees collection madule, salary and
+                    expense management, class tests management, inventory management, students and staff data record
+                    system and many more. It is very easy to use and manage because eskooly is a free online school
+                    management software for end-users. If you can send an email you can use eskooly.</p>
+                <button data-aos="flip-up" class="button4"><i><img src="eskooly img/logout.svg" height="16px" width="16px" alt=""></i>Sign
+                    Up, Now It's Free</button>
+            </div>
+            <div>
+                <img class="image1" data-aos="flip-up" src="https://www.eskooly.com/img/landing/eskooly-6.png" height="250px" width="330px"
+                    alt="">
+            </div>
+        </div>
+        <div class="maindiv5" id="Services">
+            <div class="boxes" data-aos="fade-right">
+                <div class="logo"><img src="eskooly img/office-building (1).svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Institute Info</h2>
+                    <p>You can set your all institute info like logo, name, target line ect, which will display on every
+                        printable documents and reports.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="zoom-in">
+                <div class="logo"><img src="eskooly img/priest.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Admin Portal</h2>
+                    <p>An Admin panel with all controls. Admin can manage, track and record everything within school or
+                        organization.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-left">
+                <div class="logo"><img src="eskooly img/open-laptop-computer.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Students, Parents Portal</h2>
+                    <p>A portal for students and parents to check all their progress, reports, results, home works and
+                        also communicate with teachers.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-right">
+                <div class="logo"><img src="eskooly img/computer-tablet(1).svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Employees Portal</h2>
+                    <p>A portal for school employees to manage their daily tasks, like mark attendance, assigning home
+                        work add class tests</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="zoom-in">
+                <div class="logo"><img src="eskooly img/user-group.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Class Management</h2>
+                    <p>This school management software manage your classes in an easy way. starts from students to
+                        subjects, courses to marks</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-left">
+                <div class="logo"><img src="eskooly img/graduation-cap(1).svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Exams Management</h2>
+                    <p>eSkooly has a complete solution for exams management starting from new exam to final result,
+                        reports and result cards.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-right">
+                <div class="logo"><img src="eskooly img/up-sign.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Attendance System</h2>
+                    <p>Our free school software has outstanding online attendance management system for students and
+                        staff.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="zoom-in">
+                <div class="logo"><img src="eskooly img/dollars-money-bag-on-a-hand.svg" height="32px" width="32px">
+                </div>
+                <div class="text4">
+                    <h2>Fees Management</h2>
+                    <p>Our school software opens an account for every student to manage its fees and dues. eSkooly
+                        manages everything automatically.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-left">
+                <div class="logo"><img src="eskooly img/contract.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Class Tests Management</h2>
+                    <p>Managing class tests is a piece of cake with this free school management software. It keeps
+                        record of every class test.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-right">
+                <div class="logo"><img src="eskooly img/line-chart.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Accounts Management</h2>
+                    <p>Managing income, expense, staff salaries ect is no more difficlt. By using our free school
+                        software you can manage quite easly.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="zoom-in">
+                <div class="logo"><img src="eskooly img/printing-machine.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Printable Reports & results</h2>
+                    <p>You can print all the reports and letters like, admission letter, fee slip, salary slip, job
+                        letter and result cards ect.</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+            <div class="boxes" data-aos="fade-left">
+                <div class="logo"><img src="eskooly img/plus.svg" height="32px" width="32px"></div>
+                <div class="text4">
+                    <h2>Many More</h2>
+                    <p>eSkooly is versatile free online school management software with hundreds of more features. Start
+                        exploring Now!</p>
+                    <input type="button" value="Read More">
+                </div>
+            </div>
+        </div>
+        <div class="maindiv6">
+            <div class="counter">
+                <div data-aos="fade-right"><img style="margin-left: 30px;" src="eskooly img/office-building3.svg" height="72px" width="72px">
+                </div>
+                <div id="value1" data-aos="fade-right">0</div>
+                <hr>
+                <h3 data-aos="fade-right">REGISTERED SCHOOLS</h3>
+            </div>
+            <br>
+            <div class="counter">
+                <div data-aos="fade-right"><img src="eskooly img/open-book3.svg" height="72px" width="72px"></div>
+                <div id="value2" data-aos="fade-right">0</div>
+                <hr>
+                <h3 data-aos="fade-right">REGISTERED CLASSES</h3>
+            </div>
+            <div class="counter">
+                <div data-aos="fade-left"><img src="eskooly img/man-silhouette3.svg" height="72px" width="72px"></div>
+                <div id="value3" data-aos="fade-left">0</div>
+                <hr>
+                <h3 data-aos="fade-left">REGISTERED EMPLOYEES</h3>
+            </div>
+            <div class="counter">
+                <div data-aos="fade-left"><img src="eskooly img/graduate-cap3.svg" height="72px" width="72px"></div>
+                <div id="value4" data-aos="fade-left">
+                    <h1 data-aos="fade-left">0</h1>
+                </div>
+                <hr>
+                <h3 data-aos="fade-left">REGISTERED STUDENTS</h3>
+            </div>
+        </div>
+        <div class="maindiv7" id="Screenshots">
+            <h1 data-aos="flip-right">Screenshots</h1>
+            <hr>
+            <p data-aos="fade-right">eSkooly is a free online school management software which is Responsive & optimized for all devices like
+                Mobile, Table, Laptop or a Desktop. Here some of the screenshots of our school softawre.</p>
+            <div class="screen">
+                <div data-aos="zoom-in-right"><img src="https://www.eskooly.com/img/landing/1.png" height="108px" width="223px"></div>
+                <div data-aos="zoom-in-right"><img src="https://www.eskooly.com/img/landing/2.png" height="108px" width="223px"></div>
+                <div data-aos="zoom-in-left"><img src="https://www.eskooly.com/img/landing/3.png" height="108px" width="223px"></div>
+                <div data-aos="zoom-in-left"><img src="https://www.eskooly.com/img/landing/4.png" height="108px" width="223px"></div>
+            </div>
+        </div>
+        <div class="maindiv8">
+            <h1 data-aos="zoom-in">All Other Options Are Avaliable</h1>
+            <div class="flex3">
+                <div class="box1" data-aos="zoom-out-right">
+                    <img src="eskooly img/cell-phone.svg" height="60px" width="60px">
+                    <h1>Mobile App</h1>
+                    <p><strong>Free</strong>/for lifetime</p>
+                    <p>eSkooly mobile application is also available for Admin, Teachers, Parents and Students.</p>
+                    <button><img src="eskooly img/android.svg" height="16px" width="16px">Install Now!</button>
+                </div>
+                <div class="box1" data-aos="zoom-out">
+                    <img src="eskooly img/messages-silhouette.svg" height="60px" width="60px">
+                    <h1>Mobile App</h1>
+                    <p><strong>Free</strong>/for lifetime</p>
+                    <p>eSkooly mobile application is also available for Admin, Teachers, Parents and Students.</p>
+                    <button><img src="eskooly img/android.svg" height="16px" width="16px">Install Now!</button>
+                </div>
+                <div class="box1" data-aos="zoom-out">
+                    <img src="eskooly img/monitor.svg" height="60px" width="60px">
+                    <h1>Mobile App</h1>
+                    <p><strong>Free</strong>/for lifetime</p>
+                    <p>eSkooly mobile application is also available for Admin, Teachers, Parents and Students.</p>
+                    <button><img src="eskooly img/windows.svg" height="16px" width="16px">Install Now!</button>
+                </div>
+                <div class="box1" data-aos="zoom-out-left">
+                    <img src="eskooly img/rounded-cloud.svg" height="60px" width="60px">
+                    <h1>Mobile App</h1>
+                    <p><strong>Free</strong>/for lifetime</p>
+                    <p>eSkooly mobile application is also available for Admin, Teachers, Parents and Students.</p>
+                    <button><img src="eskooly img/coding.svg" height="16px" width="16px">Install Now!</button>
+                </div>
+            </div>
+            <h1 style="margin-top: 40px;" data-aos="flip-left">Subscribe Now!</h1>
+            <div class="subscribe" data-aos="zoom-in">
+                <input class="text01" type="email" placeholder="Email...">
+                <input class="button01" type="button" value="Subscribe">
+            </div>
+        </div>
+        <div class="maindiv9">
+            <h1 class="h11" data-aos="fade-down-right">Call us today!</h1>
+            <h2 class="h21" data-aos="fade-up-left">+923 46 020 444 7</h2>
+            <hr class="hr1">
+            <div class="seclast" data-aos="fade-right">
+                <div class="name">
+                    <p>Enter name<i style="color: red;">*</i></p>
+                    <div><input class="mail" type="text"></div>
+                </div>
+                <div class="name">
+                    <p>Enter email address<i style="color: red;">*</i></p>
+                    <div><input class="mail" type="email"></div>
+                </div>
+                <div class="name">
+                    <p>Phone</p>
+                    <div><input type="number" class="mail"></div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="comment">
+                <p>Comment<i style="color: red;">*</i></p>
+                <textarea class="text02" rows="4" cols="50" name="comment" form="usrform"></textarea>
+            </div>
+            <div class="button02" data-aos="flip-right">
+                <input class="button002" type="button" value="SEND MESSAGE">
+            </div>
+            <div class="google">
+                <img data-aos="flip-left" class="imageslast" src="eskooly img/twitter.svg" height="32px" width="32px">
+                <img class="imageslast" data-aos="flip-left" src="eskooly img/facebook.svg" height="32px" width="32px">
+                <img data-aos="flip-left" class="imageslast" src="eskooly img/google-plus-logo.svg" height="32px" width="32px">
+            </div>
+        </div>
+        <div class="maindiv10">
+            <div class="lastsec">
+                <div class="div10_1">
+                    <img src="https://www.eskooly.com/img/white-logo.png" height="40px" width="100px">
+                    <p>eSkooly is world's best and no.1 free online school management softawre for lifetime with no
+                        limitations. Someone can manage their school, college, tuition center, academy or any kind of
+                        educational institute with eskooly. Our school management software has more features than any
+                        school software in the market.</p>
+                    <input type="button" value="Read More &rarr;">
+                </div>
+                <div class="div10_1">
+                    <h2 class="h201">Contact Us</h2>
+                    <div class="main01">
+                        <div class="div01"><i><img src="eskooly img/building(4).svg" height="12px" width="12px"
+                                    alt="">eSkooly</i></div>
+                        <!-- <br> -->
+                        <div class="div01"><i><img src="eskooly img/pin(4).svg" height="12px" width="12px"
+                                    alt="">Manchester, United Kingdom M32 0HL</i></div>
+                        <div class="div01"><i><img src="eskooly img/messages-silhouette (4).svg" height="12px"
+                                    width="12px" alt="">Email: mail@eskooly.com</i></div>
+                        <div class="div01"><i><img src="eskooly img/call(4).svg" height="12px" width="12px"
+                                    alt="">Phone: +44 740 407 4252</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maindiv11">
+            <div class="copy">© Copyright 2020 by eSkooly. All Rights Reserved.</div>
+            <div class="navbar">
+                <div class="style">About Us</div>
+                <div class="style">Services</div>
+                <div class="style">Blog</div>
+                <div class="style">Contact</div>
+                <div class="style">Sing Up Now</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function animateValue(id, start, end, duration) {
+            if (start === end) return;
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : 220000;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function () {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        animateValue("value1", 10000, 11585, 780);
+        animateValue("value2", 22000, 23604, 780);
+        animateValue("value3", 7000, 8949, 78);
+        animateValue("value4", 96000, 98512, 780);
+    </script>
+     <!-- <script src="github/aos.js"></script> -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+</body>
+
+</html>
